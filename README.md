@@ -6,7 +6,7 @@
 25.11.4 - 22.04 Linux Vision already runs well.   v0.1
 
 
-<img width="731" height="510" alt="Clip_2025-11-04_10-22-05" src="https://github.com/user-attachments/assets/15806ce3-07f8-48fd-a742-c37419225484" />
+<img width="365.5" height="255" alt="Clip_2025-11-04_10-22-05" src="https://github.com/user-attachments/assets/15806ce3-07f8-48fd-a742-c37419225484" />
 
 
 .
