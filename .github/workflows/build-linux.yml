@@ -11,6 +11,11 @@ jobs:
       - name: Checkout source
         uses: actions/checkout@v4
 
+      - name: Check file structure
+        run: |
+          ls -R libcurl/
+          ls -R FreeFileSync/Source/afs/
+
       - name: Install build dependencies
         run: |
           sudo apt-get update
@@ -43,12 +48,15 @@ jobs:
 
       - name: Tweak source code for libssh2 and libcurl compatibility
         run: |
-          sed -i '78s/^/\/\//' FreeFileSync/Source/afs/libcurl/curl_wrap.h
-          sed -i '120s/^/\/\//' FreeFileSync/Source/afs/libcurl/curl_wrap.h
+          # 修复 curl_wrap.h 中的兼容性问题（修正文件路径）
+          sed -i '78s/^/\/\//' libcurl/curl_wrap.h
+          sed -i '120s/^/\/\//' libcurl/curl_wrap.h
 
+          # 修复 sftp.cpp 中的宏定义缺失（确认 sftp.cpp 路径是否正确，根据代码片段应为 FreeFileSync/Source/afs/sftp.cpp）
           sed -i '58i #define MAX_SFTP_OUTGOING_SIZE 30000\n#define MAX_SFTP_READ_SIZE 30000' FreeFileSync/Source/afs/sftp.cpp
           sed -i '1662i #define LIBSSH2_SFTP_DEFAULT_MODE      -1' FreeFileSync/Source/afs/sftp.cpp
 
+          # 调整 C++ 标准（确认 Makefile 路径，根据代码片段应为 FreeFileSync/Source/Makefile）
           sed -i 's/-std=c++23/-std=c++2a/' FreeFileSync/Source/Makefile
 
       - name: Check Resources.zip exists
