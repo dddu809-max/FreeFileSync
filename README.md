@@ -1,3 +1,9 @@
+
+# 这里好像是从开源代码构建的吗？
+https://repology.org/project/freefilesync/versions
+
+
+
 # build-FreeFileSync
 FreeFileSync is a great open source file synchronization tool. It is one of my favorite tools. However, despite its open source nature, there is no build instruction for it. This repo records my own way of building FreeFileSync 10.12 on Ubuntu 18.04. 
 
