@@ -1,10 +1,15 @@
-## If you have any ideas or thoughts, you can discuss them in the discussion area. Or you can try to fork this repository, modify the workflows, and then attempt to use the action for compilation by yourself. Or you can download it and compile it locally.
+# If you have any ideas or thoughts, you can discuss them in the discussion area. Or you can try to fork this repository, modify the workflows, and then attempt to use the action for compilation by yourself. Or you can download it and compile it locally.
 
+.
 
-
-## It seems that this link was built based on open-source code?？
+# It seems that this link was built based on open-source code?？
 https://repology.org/project/freefilesync/versions
 
+.
+#  This is another repository that I forked. It is also a compilation tutorial and I hope it can be of some help to you.
+https://github.com/dddu809-max/build-FreeFileSync-on-raspberry-pi
+
+.
 
 # build-FreeFileSync   This is a tutorial written by someone else. I copied it over for reference only.
 FreeFileSync is a great open source file synchronization tool. It is one of my favorite tools. However, despite its open source nature, there is no build instruction for it. This repo records my own way of building FreeFileSync 10.12 on Ubuntu 18.04. 
