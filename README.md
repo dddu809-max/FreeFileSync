@@ -22,7 +22,11 @@ He use Open Build Service: https://build.opensuse.org/package/show/home:bgstack1
 https://repology.org/project/freefilesync/versions
 
 .
-## It’s mainly a tutorial repository that explains how to compile FreeFileSync 
+
+## Build instructions for FreeFileSync on raspberry pi
 https://github.com/pmkees/build-FreeFileSync-on-raspberry-pi
+
+.
+## It’s mainly a tutorial repository that explains how to compile FreeFileSync 
 
 https://github.com/jeffli678/build-FreeFileSync
