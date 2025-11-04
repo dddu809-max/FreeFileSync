@@ -1,10 +1,6 @@
 name: Build FreeFileSync for Ubuntu 22.04
 
 on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
   workflow_dispatch:
 
 jobs:
@@ -48,7 +44,6 @@ jobs:
       - name: Patch FreeFileSync sources (disable aggressive DPI check)
         working-directory: FreeFileSync/Source
         run: |
-          # 在 wx+/dc.h 里强行定义 wxHAS_DPI_INDEPENDENT_PIXELS，绕过 #error
           sed -i 's/#include <wx\/dcscreen.h>/#include <wx\/dcscreen.h>\n#define wxHAS_DPI_INDEPENDENT_PIXELS 1/' wx+/dc.h
 
       - name: Build FreeFileSync
