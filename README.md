@@ -41,6 +41,7 @@ https://github.com/jeffli678/build-FreeFileSync
 .
 
 注释掉以下这些代码，就可以兼容2204
+
 curl cpp
 366
 379
